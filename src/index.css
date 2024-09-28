@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --black: #000000;
+  --dark-grey: #0c0c0d;
+  --grey-1: #8a8a8b;
+  --light-grey-1: #f0f0f0;
+  --light-grey-2: #f2f2f2;
+  --light-grey-3: #f3f5f7;
+  --white: #ffffff;
+  --teal: #1c8894;
+  --dark-background: #1e2326;
+  --background: #212529;
+  --grey-2: #333333;
+  --grey-3: #343a40;
+  --blue-grey: #3a4856;
+  --green: #47b368;
+  --lime-green: #61a229;
+  --black-transparent: rgba(0, 0, 0, 0);
+  --white-transparent: rgba(255, 255, 255, 0);
+  --white-opacity-21: rgba(255, 255, 255, 0.21);
+}
