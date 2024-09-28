@@ -75,6 +75,7 @@ export const ProductList = ({ onEdit }) => {
                   <td className="py-2 px-4 border-b border-gray-300 text-center">
                     <button
                       onClick={() => onEdit(produto)}
+                      aria-label="Editar"
                       className="bg-teal-500 text-white font-semibold py-1 px-2 rounded hover:bg-teal-600 mr-2
                                   bg-gradient-to-tl from-green-500 to-teal-500
                                   hover:bg-gradient-to-br transition-all duration-500 ease-in-out"
@@ -83,6 +84,7 @@ export const ProductList = ({ onEdit }) => {
                     </button>
                     <button
                       onClick={() => handleDelete(produto.id)}
+                      aria-label="Excluir"
                       className="bg-red-500 text-white font-semibold py-1 px-2 rounded hover:bg-red-600"
                     >
                       <IconTrashX />
@@ -97,9 +99,10 @@ export const ProductList = ({ onEdit }) => {
       {/* Modal */}
       {isModalOpen && selectedProduto && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
-          <div className="bg-white p-6 rounded-lg shadow-lg max-w-md w-full relative">
+          <div data-testid="modal-content" className="bg-white p-6 rounded-lg shadow-lg max-w-md w-full relative">
             <button
               onClick={closeModal}
+              aria-label="Fechar"
               className="absolute top-5 right-5 text-gray-600 hover:text-gray-800"
             >
               <IconXboxX size={28} />

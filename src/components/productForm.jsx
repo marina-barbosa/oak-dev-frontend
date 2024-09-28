@@ -32,8 +32,9 @@ export const ProductForm = ({ product, onSave, onCancel }) => {
   return (
     <form onSubmit={handleSubmit} className="border mt-11 p-6 bg-white rounded-lg shadow-md max-w-[600px] mx-auto">
       <div className="mb-4">
-        <label className="font-urbanist block text-teal-500 font-semibold mb-1">Nome do produto</label>
+        <label htmlFor="name" className="font-urbanist block text-teal-500 font-semibold mb-1">Nome do produto</label>
         <input
+          id="name"
           type="text"
           value={name}
           onChange={(e) => setName(e.target.value)}
@@ -42,9 +43,9 @@ export const ProductForm = ({ product, onSave, onCancel }) => {
         />
       </div>
       <div className="mb-4">
-        <label className="font-urbanist block text-teal-500 font-semibold mb-1">Descrição</label>
+        <label htmlFor="description" className="font-urbanist block text-teal-500 font-semibold mb-1">Descrição</label>
         <textarea
-          type="text"
+          id="description"
           value={description}
           onChange={(e) => setDescription(e.target.value)}
           required
@@ -52,8 +53,9 @@ export const ProductForm = ({ product, onSave, onCancel }) => {
         />
       </div>
       <div className="mb-4">
-        <label className="font-urbanist block text-teal-500 font-semibold mb-1">Valor</label>
+        <label htmlFor="price" className="font-urbanist block text-teal-500 font-semibold mb-1">Valor</label>
         <input
+          id="price"
           type="number"
           value={price}
           onChange={(e) => setPrice(e.target.value)}
@@ -62,8 +64,9 @@ export const ProductForm = ({ product, onSave, onCancel }) => {
         />
       </div>
       <div className="mb-4">
-        <label className="font-urbanist block text-teal-500 font-semibold mb-1">Disponível para venda</label>
+        <label htmlFor="availableForSale" className="font-urbanist block text-teal-500 font-semibold mb-1">Disponível para venda</label>
         <select
+          id="availableForSale"
           value={availableForSale}
           onChange={(e) => setAvailableForSale(e.target.value === "true")}
           className="border border-gray-300 rounded-lg py-2 px-4 w-full"
@@ -75,8 +78,8 @@ export const ProductForm = ({ product, onSave, onCancel }) => {
       <button
         type="submit"
         className="font-urbanist text-white font-semibold py-2 px-4 rounded mr-2
-        bg-gradient-to-tl from-green-500 to-teal-500 
-        hover:bg-gradient-to-br transition-all duration-500 ease-in-out"
+    bg-gradient-to-tl from-green-500 to-teal-500 
+    hover:bg-gradient-to-br transition-all duration-500 ease-in-out"
       >
         Salvar
       </button>
@@ -88,6 +91,7 @@ export const ProductForm = ({ product, onSave, onCancel }) => {
         Cancelar
       </button>
     </form>
+
   );
 }
 
