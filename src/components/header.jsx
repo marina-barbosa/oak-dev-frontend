@@ -1,4 +1,5 @@
 import logo from "../assets/logo-oakdev.jpeg"
+import React from 'react';
 
 export const Header = () => {
   return (
