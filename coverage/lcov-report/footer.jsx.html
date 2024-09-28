@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-    <title>Code coverage report for header.jsx</title>
+    <title>Code coverage report for footer.jsx</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="prettify.css" />
     <link rel="stylesheet" href="base.css" />
@@ -19,7 +19,7 @@
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="index.html">All files</a> header.jsx</h1>
+        <h1><a href="index.html">All files</a> footer.jsx</h1>
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
@@ -72,23 +72,68 @@
 <a name='L7'></a><a href='#L7'>7</a>
 <a name='L8'></a><a href='#L8'>8</a>
 <a name='L9'></a><a href='#L9'>9</a>
-<a name='L10'></a><a href='#L10'>10</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L10'></a><a href='#L10'>10</a>
+<a name='L11'></a><a href='#L11'>11</a>
+<a name='L12'></a><a href='#L12'>12</a>
+<a name='L13'></a><a href='#L13'>13</a>
+<a name='L14'></a><a href='#L14'>14</a>
+<a name='L15'></a><a href='#L15'>15</a>
+<a name='L16'></a><a href='#L16'>16</a>
+<a name='L17'></a><a href='#L17'>17</a>
+<a name='L18'></a><a href='#L18'>18</a>
+<a name='L19'></a><a href='#L19'>19</a>
+<a name='L20'></a><a href='#L20'>20</a>
+<a name='L21'></a><a href='#L21'>21</a>
+<a name='L22'></a><a href='#L22'>22</a>
+<a name='L23'></a><a href='#L23'>23</a>
+<a name='L24'></a><a href='#L24'>24</a>
+<a name='L25'></a><a href='#L25'>25</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import logo from "../assets/logo-oakdev.jpeg"
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { IconBrandGithub, IconBrandLinkedin, IconBrandWhatsapp } from '@tabler/icons-react';
 import React from 'react';
 &nbsp;
-export const Header = () =&gt; {
+export const Footer = () =&gt; {
   return (
-    &lt;header className="shadow-md flex justify-center items-center"&gt;
-      &lt;img src={logo} alt="logo-oak" className="w-40" /&gt;
-    &lt;/header&gt;
+    &lt;footer className="bg-gray-800 text-white py-4 font-openSans"&gt;
+      &lt;div className="container mx-auto text-center"&gt;
+        &lt;p className="text-sm"&gt;
+          &amp;copy; {new Date().getFullYear()} Marina Barbosa.
+        &lt;/p&gt;
+        &lt;div className="flex justify-center space-x-4 mt-2"&gt;
+          &lt;a href="https://github.com/marina-barbosa" target="_blank" aria-label="Github" className="hover:text-gray-400"&gt;
+            &lt;IconBrandGithub size={24} /&gt;
+          &lt;/a&gt;
+          &lt;a href="https://www.linkedin.com/in/marina-barbosa-exp/" target="_blank" aria-label="Linkedin" className="hover:text-gray-400"&gt;
+            &lt;IconBrandLinkedin size={24} /&gt;
+          &lt;/a&gt;
+          &lt;a href="https://wa.me/13996697841" target="_blank" aria-label="Whatsapp" className="hover:text-gray-400"&gt;
+            &lt;IconBrandWhatsapp size={24} /&gt;
+          &lt;/a&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/footer&gt;
   )
 }</pre></td></tr></table></pre>
 
