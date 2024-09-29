@@ -60,6 +60,7 @@ export const ProductForm = ({ product, onSave, onCancel }) => {
           value={price}
           onChange={(e) => setPrice(e.target.value)}
           required
+          min="0"
           className="border border-gray-300 rounded-lg py-2 px-4 w-full"
         />
       </div>
