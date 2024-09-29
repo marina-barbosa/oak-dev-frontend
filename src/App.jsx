@@ -23,11 +23,11 @@ function App() {
     <div className="flex flex-col min-h-screen text-gray-500 font-openSans antialiased">
       <Header />
       <main className="flex-grow">
-        {isFormVisible ? (
+        {/* {isFormVisible ? (
           <ProductForm product={editingProduct} onSave={handleSave} onCancel={() => setIsFormVisible(false)} />
         ) : (
           <ProductList onEdit={handleEdit} />
-        )}
+        )} */}
       </main>
       <Footer />
     </div>
