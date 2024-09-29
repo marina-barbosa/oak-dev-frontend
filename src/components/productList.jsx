@@ -2,7 +2,8 @@ import React, { useEffect, useState } from 'react';
 import { IconTrashX, IconPencil, IconXboxX } from '@tabler/icons-react';
 import axios from 'axios';
 
-const API_URL = "http://localhost:8080"
+const API_URL = "https://oak-dev-backend.onrender.com"
+// const API_URL = "http://localhost:8080"
 
 export const ProductList = ({ onEdit }) => {
   const [produtos, setProdutos] = useState([]);
