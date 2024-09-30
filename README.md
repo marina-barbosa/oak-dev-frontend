@@ -55,3 +55,10 @@ npm install
 ```
 npm run dev
 ```
+
+**Acesse**:
+
+http://localhost:5173/
+
+https://oakdev.netlify.app/
+
